@@ -85,7 +85,7 @@ class TCN(nn.Module):
 
 
 if __name__ == '__main__':
-    from spectrogram_dataset import audioDataset
+    from ..spectrogram_dataset import audioDataset
     from torch.utils.data import DataLoader
 
     DEVICE = 'cuda:2'

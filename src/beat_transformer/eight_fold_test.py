@@ -3,10 +3,10 @@ import pickle
 import torch
 import madmom
 import numpy as np
-from utils import AverageMeter
+from .utils import AverageMeter
 from torch.utils.data import DataLoader
-from DilatedTransformer import Demixed_DilatedTransformerModel
-from spectrogram_dataset import audioDataset
+from .DilatedTransformer import Demixed_DilatedTransformerModel
+from .spectrogram_dataset import audioDataset
 from tqdm import tqdm
 import shutil
 

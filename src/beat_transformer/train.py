@@ -7,13 +7,13 @@ import torch
 from tqdm import tqdm
 from torch import nn
 from torch import optim
-from optimizer import Lookahead
+from .optimizer import Lookahead
 from torch.utils.tensorboard import SummaryWriter
 from torch.utils.data import DataLoader
-from utils import AverageMeter, epoch_time, infer_beat_with_DBN, infer_downbeat_with_DBN
-from spectrogram_dataset import audioDataset
+from .utils import AverageMeter, epoch_time, infer_beat_with_DBN, infer_downbeat_with_DBN
+from .spectrogram_dataset import audioDataset
 
-from DilatedTransformer import Demixed_DilatedTransformerModel
+from .DilatedTransformer import Demixed_DilatedTransformerModel
 
 import warnings
 warnings.filterwarnings('ignore')

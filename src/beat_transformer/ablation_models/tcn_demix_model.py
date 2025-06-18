@@ -1,11 +1,11 @@
 import torch 
 from torch import nn 
-from music_transformer import TransformerEncoderLayer
+from .music_transformer import TransformerEncoderLayer
 import torch.nn.functional as F 
 import math
 import sys
 
-from tcn import residual_block
+from .tcn import residual_block
 
 
 class DemixedTCN(nn.Module):
@@ -169,7 +169,7 @@ class DemixedTCN(nn.Module):
 
 
 if __name__ == '__main__':
-    from spectrogram_dataset import audioDataset
+    from ..spectrogram_dataset import audioDataset
     from torch.utils.data import DataLoader
 
     DEVICE = 'cpu'

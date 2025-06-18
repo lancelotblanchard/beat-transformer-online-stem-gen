@@ -5,13 +5,13 @@ import torch
 import numpy as np
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from DilatedTransformer import Demixed_DilatedTransformerModel
-from spectrogram_dataset import audioDataset
+from .DilatedTransformer import Demixed_DilatedTransformerModel
+from .spectrogram_dataset import audioDataset
 import scipy
 #import seaborn as sns
 import matplotlib.pyplot as plt
 
-from utils import AverageMeter
+from .utils import AverageMeter
 
 import warnings
 warnings.filterwarnings('ignore')

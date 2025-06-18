@@ -1,6 +1,6 @@
 import torch 
 from torch import nn 
-from DilatedTransformerLayer import DilatedTransformerLayer
+from .DilatedTransformerLayer import DilatedTransformerLayer
 
 
 class DilatedTransformerModel(nn.Module):
@@ -116,12 +116,12 @@ class DilatedTransformerModel(nn.Module):
 
 
 if __name__ == '__main__':
-    from non_demix_spectrogram_dataset import audioDataset
+    from .non_demix_spectrogram_dataset import audioDataset
     from torch.utils.data import DataLoader
     from tqdm import tqdm
     import numpy as np
     import madmom
-    from utils import AverageMeter
+    from .utils import AverageMeter
     SAMPLE_SIZE = int(44100 / 1024 * 180)
     INSTR =5
     FPS = 44100 / 1024
