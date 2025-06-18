@@ -15,10 +15,10 @@ license = { text = "MIT" }
 requires-python = ">=3.6"
 readme = ""
 dependencies = [
-    "librosa==0.11.0",
-    "torch==2.4.1",
-    "torchvision==0.19.1",
-    "torchaudio==2.4.1",
+    "librosa",
+    "torch",
+    "torchvision",
+    "torchaudio",
     "madmom @ git+https://github.com/CPJKU/madmom.git@27f032e"
 ]
 classifiers = [
